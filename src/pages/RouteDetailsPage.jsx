@@ -12,7 +12,7 @@ import {
   FaAngleRight,
 } from "react-icons/fa";
 import { getRouteById } from "../services/routeService";
-import RouteDetails from "../components/routes/RouteDetails";
+import RouteDetails from "../components/routes/Routedetails";
 import BusRouteMap from "../components/maps/BusRouteMap";
 
 const RouteDetailsPage = () => {
