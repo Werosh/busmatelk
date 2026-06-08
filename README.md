@@ -2,7 +2,7 @@
 
 **Live Demo:** [https://busmatelk.netlify.app/](https://busmatelk.netlify.app/)
 
-**Sri Lanka's modern bus route companion** — search routes, explore stops on interactive maps, save favorites, and plan journeys across the island's public transport network.
+**Sri Lanka's modern bus route companion** - search routes, explore stops on interactive maps, save favorites, and plan journeys across the island's public transport network.
 
 BusMate LK is a React single-page application built for commuters, travelers, and administrators who need reliable access to Sri Lankan bus route information in one place.
 
@@ -29,17 +29,17 @@ BusMate LK is a React single-page application built for commuters, travelers, an
 
 ### For Passengers
 
-- **Route discovery** — Browse and search bus routes by number, destination, region, or stop name
-- **Route details** — View stops, frequency, and route metadata on dedicated detail pages
-- **Interactive maps** — Visualize routes and stop locations with Google Maps integration
-- **Favorites** — Save frequently used routes to a personal list (requires sign-in)
-- **User accounts** — Register, sign in, and manage your profile
+- **Route discovery** - Browse and search bus routes by number, destination, region, or stop name
+- **Route details** - View stops, frequency, and route metadata on dedicated detail pages
+- **Interactive maps** - Visualize routes and stop locations with Google Maps integration
+- **Favorites** - Save frequently used routes to a personal list (requires sign-in)
+- **User accounts** - Register, sign in, and manage your profile
 
 ### For Administrators
 
-- **Admin dashboard** — Create, edit, and delete bus routes (admin role required)
-- **Regional organization** — Assign routes to Sri Lankan provinces and regions
-- **Stop management** — Add and maintain stop lists per route
+- **Admin dashboard** - Create, edit, and delete bus routes (admin role required)
+- **Regional organization** - Assign routes to Sri Lankan provinces and regions
+- **Stop management** - Add and maintain stop lists per route
 
 ### Platform
 
@@ -52,17 +52,17 @@ BusMate LK is a React single-page application built for commuters, travelers, an
 
 ## Tech Stack
 
-| Layer | Technology |
-|-------|------------|
-| Framework | [React 19](https://react.dev/) |
-| Build tool | [Vite 6](https://vitejs.dev/) |
-| Styling | [Tailwind CSS 4](https://tailwindcss.com/) |
-| Routing | [React Router 7](https://reactrouter.com/) |
-| Backend / Auth | [Firebase](https://firebase.google.com/) (Auth + Firestore) |
-| Maps | [Google Maps API](https://developers.google.com/maps), [Leaflet](https://leafletjs.com/), [React Map GL](https://visgl.github.io/react-map-gl/) |
-| Animation | [Framer Motion](https://www.framer.com/motion/) |
-| Icons | [Lucide React](https://lucide.dev/), [React Icons](https://react-icons.github.io/react-icons/) |
-| Linting | [ESLint 9](https://eslint.org/) |
+| Layer          | Technology                                                                                                                                      |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Framework      | [React 19](https://react.dev/)                                                                                                                  |
+| Build tool     | [Vite 6](https://vitejs.dev/)                                                                                                                   |
+| Styling        | [Tailwind CSS 4](https://tailwindcss.com/)                                                                                                      |
+| Routing        | [React Router 7](https://reactrouter.com/)                                                                                                      |
+| Backend / Auth | [Firebase](https://firebase.google.com/) (Auth + Firestore)                                                                                     |
+| Maps           | [Google Maps API](https://developers.google.com/maps), [Leaflet](https://leafletjs.com/), [React Map GL](https://visgl.github.io/react-map-gl/) |
+| Animation      | [Framer Motion](https://www.framer.com/motion/)                                                                                                 |
+| Icons          | [Lucide React](https://lucide.dev/), [React Icons](https://react-icons.github.io/react-icons/)                                                  |
+| Linting        | [ESLint 9](https://eslint.org/)                                                                                                                 |
 
 ---
 
@@ -121,9 +121,9 @@ Create a `.env` file in the root directory:
 REACT_APP_GOOGLE_MAPS_API_KEY=your_google_maps_api_key_here
 ```
 
-| Variable | Required | Description |
-|----------|----------|-------------|
-| `REACT_APP_GOOGLE_MAPS_API_KEY` | Yes | Google Maps JavaScript API key for route map rendering |
+| Variable                        | Required | Description                                            |
+| ------------------------------- | -------- | ------------------------------------------------------ |
+| `REACT_APP_GOOGLE_MAPS_API_KEY` | Yes      | Google Maps JavaScript API key for route map rendering |
 
 > **Note:** Firebase configuration is currently defined in `src/services/firebase.js`. For production deployments, consider moving Firebase credentials to environment variables and restricting API key usage in the Firebase and Google Cloud consoles.
 
@@ -131,12 +131,12 @@ REACT_APP_GOOGLE_MAPS_API_KEY=your_google_maps_api_key_here
 
 ## Available Scripts
 
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start the Vite development server with hot module replacement |
-| `npm run build` | Generate an optimized production build in `dist/` |
-| `npm run preview` | Serve the production build locally for testing |
-| `npm run lint` | Run ESLint across the project |
+| Command           | Description                                                   |
+| ----------------- | ------------------------------------------------------------- |
+| `npm run dev`     | Start the Vite development server with hot module replacement |
+| `npm run build`   | Generate an optimized production build in `dist/`             |
+| `npm run preview` | Serve the production build locally for testing                |
+| `npm run lint`    | Run ESLint across the project                                 |
 
 ---
 
@@ -181,16 +181,16 @@ busmate-lk/
 
 ## Application Routes
 
-| Path | Page | Access |
-|------|------|--------|
-| `/` | Home | Public |
-| `/routes` | All Routes (search & browse) | Public |
-| `/route/:id` | Route Details | Public |
-| `/favorites` | Saved Routes | Authenticated |
-| `/login` | Sign In | Public |
-| `/register` | Create Account | Public |
-| `/profile` | User Profile | Authenticated |
-| `/admin_dashbord` | Admin Dashboard | Admin only |
+| Path              | Page                         | Access        |
+| ----------------- | ---------------------------- | ------------- |
+| `/`               | Home                         | Public        |
+| `/routes`         | All Routes (search & browse) | Public        |
+| `/route/:id`      | Route Details                | Public        |
+| `/favorites`      | Saved Routes                 | Authenticated |
+| `/login`          | Sign In                      | Public        |
+| `/register`       | Create Account               | Public        |
+| `/profile`        | User Profile                 | Authenticated |
+| `/admin_dashbord` | Admin Dashboard              | Admin only    |
 
 ---
 
@@ -204,12 +204,12 @@ BusMate LK uses Firebase for authentication and data storage. To connect your ow
 4. Update the configuration in `src/services/firebase.js` with your project credentials
 5. Set up the following Firestore collections:
 
-| Collection | Purpose |
-|------------|---------|
-| `users` | User profiles (`displayName`, `email`, `role`, etc.) |
-| `routes` | Bus route documents (number, name, region, stops, coordinates) |
-| `stops` | Optional separate stop documents linked by `routeId` |
-| `favorites` | User–route favorite mappings |
+| Collection  | Purpose                                                        |
+| ----------- | -------------------------------------------------------------- |
+| `users`     | User profiles (`displayName`, `email`, `role`, etc.)           |
+| `routes`    | Bus route documents (number, name, region, stops, coordinates) |
+| `stops`     | Optional separate stop documents linked by `routeId`           |
+| `favorites` | User–route favorite mappings                                   |
 
 ### Admin access
 
